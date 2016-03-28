@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>华天</title>
+	<meta charset="utf-8" />
+	<link href="styles/common.css" rel="stylesheet" type="text/css" />
+	<style>
+
+/*CSS样式顺序 position - box-madel - typographic - visual - Misc 
+	1.位置属性(position, top, right, z-index, display, float等)
+	2.大小(width, height, padding, margin)
+	3.文字系列(font, line-height, letter-spacing, color- text-align等)
+	4.背景(background, border等)
+	5.其他(animation, transition等)
+*/	
+		section {border:1px solid red; margin:10px auto; overflow: hidden;}
+		.bd_line {border-bottom: 1px solid blue;}
+		.tb {border: solid #fff; border-width: 1px 0px 0px 1px; text-align:center; margin:0 auto; background-color: #f5f5f5; }
+		.tb td {border: solid #fff; border-width: 0px 1px 1px 0px;}
+/* 切换城市 */
+		.hot_city, .latest_visited {border-bottom: 1px solid black;}		
+/* 洗涤 */	
+		.wash {margin: 0 -6px; text-align: center;}
+		.wash li {float: left; width: 301px; margin: 0 6px;}	
+/* 洗涤 洗衣价格 */  /* 洗涤 洗鞋价格 */
+		.f_left{float:left; display:block; width:300px; border:1px solid green;}
+		.f_right{float:right; display:block; width:650px;  border:1px solid green;}
+		.tb_1{width:600px; height:200px; }
+		.tb_1 td {line-height: 49px;   width:299px;}
+/* 日常保洁 */		
+		.tb_2{width:600px; height:100px; }
+		.tb_2 td {line-height: 50px; width:100px;}		
+		.clean li {float:left; width:50%;}
+/* 通用价目表  */
+		.price_tb {background-color: #f5f5f5; width:600px; text-align: center;}
+		.price_list {width:600px; border: solid #fff; border-width: 1px 0px 0px 1px; overflow: hidden;}
+		.price_list li {float:left; width:299px; border: solid #fff; border-width: 0px 1px 1px 0px;}
+/* 通用框  */		
+		.bd_line {border-bottom: 1px solid blue;}
+		.text-indent {text-indent: 2em;}
+/* 申请加盟 */		
+		.form_1 {text-align: center;}
+		.form_input {width:100%; height:40px; line-height:40px; margin:10px auto;}
+		.form_input input {width:400px; border:1px solid #f5f5f5; height:30px; }
+		.btn_submit {padding:5px 15px; border:1px solid black; border-radius: 3px;}
+	</style>
+</head>
+<body>
+	<header class="header_fixed">
+		<div class="head_item">
+			<div class="hd_logo">
+				<a href="#"><img src="" alt="logo"/></a>
+			</div>
+			<div class="hd_location">
+				<p>长沙</p>
+				<p>[<span>切换城市</span>]</p>
+			</div>
+			<nav class="hd_nav">
+				<ul class="nav_item">
+					<li><a href="#">首页</a></li>
+					<li><a href="#">洗涤</a></li>
+					<li><a href="#">家政</a></li>
+					<li><a href="#">厨师</a></li>
+					<li><a href="#">合作加盟</a></li>
+					<li><a href="#">培训招生</a></li>
+					<li><a href="#">下载APP</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+
+		<!-- 定宽 居中 -->    
+	<section>
+		<img src="images/bg_1.png"/>		
+	</section>
+<!-- 切换城市 -->	
+	<section>
+		<div class="hot_city">
+			<p>
+				<strong>热门城市：</strong>
+				<a href="">北京</a>
+				<a href="">上海</a>
+				<a href="">广州</a>
+				<a href="">深圳</a>
+				<a href="">杭州</a>
+				<a href="">南京</a>
+				<a href="">武汉</a>
+			</p>
+		</div>	
+		<div class="latest_visited">
+			<p>
+				<strong>最近访问：</strong>
+				<a href="">长沙</a>
+				<a href="">深圳</a>
+			</p>
+		</div>
+		<div class="city_open">
+			<strong>已开通城市：</strong>
+			<ul>
+				<li>
+					<b>B</b>
+					<span>
+						<a href="">北京</a>
+					</span>	
+				</li>
+				<li>
+					<b>C</b>
+					<span>
+						<a href="">长沙</a>
+						<a href="">重庆</a>
+						<a href="">成都</a>						
+					</span>
+
+				</li>
+				<li>
+					<b>D</b>
+					<span>
+						<a href="">大连</a>
+					</span>	
+				</li>	
+				<li>
+					<b>F</b>
+					<span>
+						<a href="">福州</a>
+					</span>	
+				</li>			
+			</ul>
+		</div>		
+	</section>
+
+<!-- 洗涤 洗衣页面 -->
+	<section>
+		<div class="f_left"  >
+			<ul>
+				<li>洗衣</li>
+				<li>洗鞋</li>
+				<li>家纺</li>
+				<li>奢侈品皮具</li>
+			</ul>
+			<div>
+				<span></span>
+				<h5>微信扫一扫，去APP下单</h5>
+				<span></span>
+				<h5>微信扫一扫，去APP下单</h5>
+			</div>
+		</div>
+		<div class="f_right">
+			<div>
+				<h4 class="bd_line">洗衣价格</h4>
+				<table class="tb_1" border="0" cellpadding="0" cellspacing="0">
+					<caption>价目表</caption>
+					<tr>
+						<td>上衣</td>
+						<td>12元/件起</td>
+					</tr>
+					<tr>
+						<td>大衣外套</td>
+						<td>25元/件起</td>
+					</tr>
+					<tr>
+						<td>裤装裙装</td>
+						<td>12元/件起</td>
+					</tr>
+					<tr>
+						<td>配件</td>
+						<td>12元/件起</td>
+					</tr>
+				</table>
+				<p>注：按袋洗99元一袋</p>
+			</div>
+			<div>
+				<h4 class="bd_line">服务说明</h4>
+				<p>专业洗衣服务，72小时内送回。</p>
+				<p>羽绒服、棉服等厚重衣服预计3-5天送回。</p>
+				<p>皮衣、裘衣预计7-9天送回。</p>
+			</div>
+			<div>
+				<h4 class="bd_line">快递洗衣</h4>
+				<P>2小时顺丰上门收件。</P>
+				<p>48小时快速洗涤邮 安全高效更放心。（江浙沪订单满38元顺丰包邮、其他地区订单满79元顺丰包邮）</p>
+				<p>洗完快递寄回，省时省事便捷。</p>
+			</div>
+		</div>
+	</section>
+<!-- 洗涤 -->
+	<section>
+		<ul class="wash">
+			<li>
+				<img src="" />
+				<p>洗衣</p>
+				<p>9元/件起 99元一袋</p>
+				<p>查看详情</p>
+			</li>
+			<li>
+				<img src="" />
+				<p>洗鞋</p>
+				<p>25元/双起</p>
+				<p>查看详情</p>
+			</li>
+			<li>
+				<img src="" />
+				<p>家纺</p>
+				<p>12元/件起</p>
+				<p>查看详情</p>
+			</li>
+			<li>
+				<img src="" alt=""/>
+				<p>奢侈品皮具</p>
+				<p>100元起</p>
+				<p>查看详情</p>
+			</li>
+		</ul>
+	</section>
+<!-- 洗涤 洗鞋价格 -->
+	<section>
+		<div class="f_left"  >
+			<ul>
+				<li>洗衣</li>
+				<li>洗鞋</li>
+				<li>家纺</li>
+				<li>奢侈品皮具</li>
+			</ul>
+			<div>
+				<span></span>
+				<h5>微信扫一扫，去APP下单</h5>
+				<span></span>
+				<h5>微信扫一扫，去APP下单</h5>
+			</div>
+		</div>
+		<div class="f_right">
+			<div>
+				<h4 class="bd_line">洗鞋价格</h4>
+				<table class="tb_1" border="0" cellpadding="0" cellspacing="0">
+					<caption>价目表</caption>
+					<tr>
+						<td>运动鞋</td>
+						<td>25元/双</td>
+					</tr>
+					<tr>
+						<td>帆布鞋</td>
+						<td>25元/双</td>
+					</tr>
+					<tr>
+						<td>传统布鞋</td>
+						<td>25元/双</td>
+					</tr>
+					<tr>
+						<td>棉拖鞋</td>
+						<td>29元/双</td>
+					</tr>
+				</table>
+			</div>
+			<div>
+				<h4 class="bd_line">服务说明</h4>
+				<p>专业洗鞋服务，5-7天送回。</p>
+			</div>
+			<div>
+				<h4 class="bd_line">快递洗衣</h4>
+				<P>2小时顺丰上门收件。</P>
+				<p>48小时快速洗涤邮 安全高效更放心。（江浙沪订单满38元顺丰包邮、其他地区订单满79元顺丰包邮）</p>
+				<p>洗完快递寄回，省时省事便捷。</p>
+			</div>
+		</div>
+	</section>
+<!-- 日常保洁 -->
+	<section>
+		<div>
+			<h4 class="bd_line">服务价格</h4>
+			<table class="tb_2" border="0" cellpadding="0" cellspacing="0">
+				<caption>价目表</caption>
+				<tr>
+					<td>时长</td>
+					<td>2小时</td>
+					<td>2.5小时</td>
+					<td>3小时</td>
+					<td>3.5小时</td>
+					<td>4小时</td>
+				</tr>
+				<tr>
+					<td>价格</td>
+					<td>60元</td>
+					<td>72.5元</td>
+					<td>75元</td>
+					<td>87.5元</td>
+					<td>100元</td>
+				</tr>
+			</table>
+			<p>注：超过3小时，每小时25元；如使用华天清洁剂，每小时多加5元。</p>
+		</div>
+		<div>
+			<h4 class="bd_line">服务范围</h4>
+			<ul class="clean">
+				<li>
+					<img src="" />
+					<h5>整体清洁范围</h5>
+					<p>1.物品归位整理，无覆盖物地面垃圾清洁</p>
+					<p>2.内厨清洁，更换垃圾袋</p>
+					<p>3.床底、柜底除尘、家具家电表面清洁</p>
+					<p>4.门表面及把手、墙面、踢脚线除尘</p>
+				</li>
+				<li>
+					<img src="" />
+					<h5>整体清洁范围</h5>
+					<p>1.物品归位整理，无覆盖物地面垃圾清洁</p>
+					<p>2.内厨清洁，更换垃圾袋</p>
+					<p>3.床底、柜底除尘、家具家电表面清洁</p>
+					<p>4.门表面及把手、墙面、踢脚线除尘</p>
+				</li>
+				<li>
+					<img src="" />
+					<h5>整体清洁范围</h5>
+					<p>1.物品归位整理，无覆盖物地面垃圾清洁</p>
+					<p>2.内厨清洁，更换垃圾袋</p>
+					<p>3.床底、柜底除尘、家具家电表面清洁</p>
+					<p>4.门表面及把手、墙面、踢脚线除尘</p>
+				</li>
+				<li>
+					<img src="" />
+					<h5>整体清洁范围</h5>
+					<p>1.物品归位整理，无覆盖物地面垃圾清洁</p>
+					<p>2.内厨清洁，更换垃圾袋</p>
+					<p>3.床底、柜底除尘、家具家电表面清洁</p>
+					<p>4.门表面及把手、墙面、踢脚线除尘</p>
+				</li>
+			</ul>
+		</div>
+	</section>
+<!-- 通用价目表 -->	
+	<section>
+		<div class="price_tb">
+			<p>表名</p>
+			<ul class="price_list">
+				<li>房型</li>
+				<li>定价（元）</li>
+				<li>单独厨房</li>
+				<li>250</li>
+				<li>单独卫生间</li>
+				<li>110</li>
+				<li>客厅</li>
+				<li>500</li>
+				<li>卧室</li>
+				<li>420</li>
+			</ul>
+		</div>
+	</section>
+
+<!-- 通用框 -->	
+	<section>
+		<div>
+			<h4 class="bd_line">这是通用框</h4>
+			<div class="text-indent">
+				<p>这是通用框这是通用框</p>
+				<p>这是通用框这是通用框</p>				
+			</div>
+
+		</div>
+	</section>
+<!-- 申请加盟 -->
+	<section>
+		<h4 class="bd_line">申请加盟</h4>
+		<form class="form_1" action="" method="post">
+			<div class="form_input">
+				<label for="name">姓名</label>
+				<input id="name" type="text" name="" value="" />
+			</div>	
+			<div class="form_input">
+				<label for="sex">性别</label>
+				<input id="sex" type="text" name="" value="" />
+			</div>	
+			<div class="form_input">	
+				<label for="age">年龄</label>
+				<input id="age" type="text" name="" value="" />
+			</div>	
+			<div class="form_input">	
+				<label for="tel">手机</label>
+				<input id="tel" type="text" name="" value="" />
+			</div>	
+			<div class="form_input">	
+				<label for="email">邮箱</label>
+				<input id="email" type="text" name="" value="" />
+			</div>	
+			<button class="btn_submit" type="submit" value="提交" >提交</button>
+		</form>
+	</section>
+	<footer>
+		<div class="foot">
+			<div class="ft_item">
+				<h4>华天到家</h4>
+				<p>洗涤服务</p>
+				<p>家政服务</p>
+				<p>厨师服务</p>
+			</div>
+			<div class="ft_item">
+				<h4>关于我们</h4>
+				<p>了解我们</p>
+				<p>加入我们</p>
+				<p>家政百科</p>
+			</div>
+			<div class="ft_item">
+				<h4>关注我们</h4>
+				<p>新浪微博</p>
+				<p>官方微信</p>
+			</div>
+			<div class="ft_item2">
+				<h4>联系我们</h4>
+				<p>电子邮箱：chhtg@163.com</p>				
+				<p>联系电话：（86——731）84660888——80989</p>
+				<p>传真：（86——731）84421788</p>
+				<p>地址：湖南省长沙市芙蓉中路一段 593号</p>
+			</div>						
+		</div>
+		<p class="corp_info">Copyright © 2010 HuaTian Industry Holding Group Co.,Ltd All right reserved - 湘ICP备13010431号</p>
+	</footer>
+
+</body>	
+</html>
