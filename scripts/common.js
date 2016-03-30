@@ -9,26 +9,26 @@ function addLoadEvent(func) {
     }
   }
 }
+
 function showPic(){
-	if(!document.getElementById("js_wash_pics")){
+	if(!document.getElementById("js_market_items")){
 		return false;
-	}
+	}	
 	if(!document.getElementsByClassName("js_item")){
 		return false;
 	}
-	var pic_lists = document.getElementById("js_wash_pics");
-	var imgs = pic_lists.getElementsByTagName("img");
-	var item_lists = document.getElementById("js_wash_items");
+	if(!document.getElementsByTagName("li")){
+		return false;
+	}	
+	var item_lists = document.getElementById("js_market_items");
 	var items = item_lists.getElementsByTagName("li");
 	var tb_items = document.getElementsByClassName("js_item");
 	function clickshow(num){
 		var index = num;
 		items[index].onclick = function(){
 			for(var j=0; j<items.length; j++){
-				imgs[j].setAttribute("class","hidden");
 				tb_items[j].style.display="none";
 			}
-			imgs[index].setAttribute("class","show");
 			tb_items[index].style.display="block";
 		};
 	}
@@ -58,5 +58,72 @@ function showNav(){
 		clickshow(i);
 	}
 }
-addLoadEvent(showPic);
+
+
+function showMarket(){
+	if(!document.getElementById("js_market_nav")){
+		return false;
+	}
+	if(!document.getElementById("js_market_content")){
+		return false;
+	}
+	if(!document.getElementsByTagName("li")){
+		return false;
+	}	
+	var nav = document.getElementById("js_market_nav");
+	var con = document.getElementById("js_market_content");
+	var navs = nav.getElementsByTagName("li");
+	var cons = con.getElementsByTagName("li");
+	function clickshow(num){
+		var index = num;
+		navs[index].onclick = function(){
+			for(var j=0; j<cons.length; j++){
+				cons[j].setAttribute("class","hidden");
+
+			}
+			cons[index].setAttribute("class","show");
+		}
+  }
+  function onmouseshow(num){
+		var index = num;
+		navs[index].onmouseover = function(){
+			for(var j=0; j<cons.length; j++){
+				navs[j].removeAttribute("class");
+			}
+			navs[index].setAttribute("class","active2");
+		};
+  }
+	for(var i=0; i<navs.length; i++){
+		clickshow(i);
+		onmouseshow(i);
+	}
+}	
+/*
+function showJoin(){
+	if(!document.getElementById("js_join_nav")){
+		return false;
+	}
+	if(!document.getElementsByClassName("js_join")){
+		return false;
+	}
+	var nav = document.getElementById("js_join_nav");
+	var navs = document.getElementsByTagName("li");
+	var cons = document.getElementsByClassName("js_join");
+
+	function clickshow(num){
+		var index = num;
+		navs[index].onclick = function(){
+			for(var j=0; j<navs.length; j++){
+				cons[j].style.display="none";
+			}
+			cons[index].style.display="block";
+		};
+	}
+	for(var i=0; i<navs.length; i++){
+		clickshow(i);
+	}
+}
+*/
 addLoadEvent(showNav);
+addLoadEvent(showMarket);
+addLoadEvent(showPic);
