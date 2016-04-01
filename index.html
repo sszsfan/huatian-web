@@ -5,10 +5,10 @@
 	<meta charset="utf-8" />
 	<link href="styles/common.css" rel="stylesheet" type="text/css" />
 
-	<script src="scripts/jquery-1.12.2.min.js"></script>
-	<script src="scripts/jquery.slides.min.js"></script>
-	<script src="scripts/demo-js.js"></script>
-	<script src="scripts/common.js"></script>
+	<script src="scripts/jquery-1.12.2.min.js" type="text/javascript"></script>
+	<script src="scripts/jquery.slides.min.js" type="text/javascript"></script>
+	<script src="scripts/demo-js.js" type="text/javascript"></script>
+	<script src="scripts/common.js" type="text/javascript"></script>
 </head>
 <body>
 	<header class="header_fixed">
@@ -22,7 +22,7 @@
 			</div>
 			<nav class="hd_nav">
 				<ul class="nav_item">
-					<li><a href="index.html">首页</a></li>
+					<li><a class="active_link" href="index.html">首页</a></li>
 					<li><a href="wash.html">洗涤</a></li>
 					<li><a href="housekeep.html">家政</a></li>
 					<li><a href="cook.html">厨师</a></li>
@@ -35,13 +35,13 @@
 	</header>
 	<!-- 背景层 -->
 	<div class="wrap"> 
-	<!-- 轮播图 -->	
-	<section class="slides_pics">
-		<div id="slides">
-		<img id="pic1" src="images/slide001.png" />
-		<img id="pic1" src="images/slide002.png" />
-	  </div>  
-	</section>
+		<!-- 轮播图 -->	
+		<section class="slides_pics">
+			<div id="slides">
+			<img id="pic1" src="images/slide001.png" />
+			<img id="pic1" src="images/slide002.png" />
+		  </div>  
+		</section>
 		<!-- 定宽 居中 -->    
 		<div class="wrapper">
 			<div class="menu">
@@ -252,24 +252,43 @@
 					<img src="images/news.jpg" />
 					<h4>洗衣O2O几种模式解析</h4>
 					<p class="news_time">发表于2016-01-13</p>
-					<p class="t_i">洗衣在传统行业领域一直是一个被漠视的行业，整个行业几乎仍处于一个草莽丛生的年代，大多数店以夫妻店模式存在，缺乏科学的管理和经营方式。而各大连锁加盟公司恶性竞争，但是在全国却没有任何一家公司市场占有率超过1%;坏洗率高居不下，整个行业和城市范围内没有一个可统一执行的赔付标准。<span class="f_green">查看全文</span></p>
+					<p class="t_i">洗衣在传统行业领域一直是一个被漠视的行业，整个行业几乎仍处于一个草莽丛生的年代，大多数店以夫妻店模式存在，缺乏科学的管理和经营方式。而各大连锁加盟公司恶性竞争，但是在全国却没有任何一家公司市场占有率超过1%;坏洗率高居不下，整个行业和城市范围内没有一个可统一执行的赔付标准。<a href="index_news.html"><span class="f_green">查看全文</span></a></p>
 				</article>	
 				<article>
 					<img src="images/news.jpg" />
 					<h4>洗衣O2O几种模式解析</h4>
 					<p class="news_time">发表于2016-01-13</p>
-					<p class="t_i">洗衣在传统行业领域一直是一个被漠视的行业，整个行业几乎仍处于一个草莽丛生的年代，大多数店以夫妻店模式存在，缺乏科学的管理和经营方式。而各大连锁加盟公司恶性竞争，但是在全国却没有任何一家公司市场占有率超过1%;坏洗率高居不下，整个行业和城市范围内没有一个可统一执行的赔付标准。<span class="f_green">查看全文</span></p>
+					<p class="t_i">洗衣在传统行业领域一直是一个被漠视的行业，整个行业几乎仍处于一个草莽丛生的年代，大多数店以夫妻店模式存在，缺乏科学的管理和经营方式。而各大连锁加盟公司恶性竞争，但是在全国却没有任何一家公司市场占有率超过1%;坏洗率高居不下，整个行业和城市范围内没有一个可统一执行的赔付标准。<a href="index_news.html"><span class="f_green">查看全文</span></a></p>
 				</article>		
 				<article class="last_art">
 					<img src="images/news.jpg" />
 					<h4>洗衣O2O几种模式解析</h4>
 					<p class="news_time">发表于2016-01-13</p>
-					<p class="t_i">洗衣在传统行业领域一直是一个被漠视的行业，整个行业几乎仍处于一个草莽丛生的年代，大多数店以夫妻店模式存在，缺乏科学的管理和经营方式。而各大连锁加盟公司恶性竞争，但是在全国却没有任何一家公司市场占有率超过1%;坏洗率高居不下，整个行业和城市范围内没有一个可统一执行的赔付标准。<span class="f_green">查看全文</span></p>
+					<p class="t_i">洗衣在传统行业领域一直是一个被漠视的行业，整个行业几乎仍处于一个草莽丛生的年代，大多数店以夫妻店模式存在，缺乏科学的管理和经营方式。而各大连锁加盟公司恶性竞争，但是在全国却没有任何一家公司市场占有率超过1%;坏洗率高居不下，整个行业和城市范围内没有一个可统一执行的赔付标准。<a href="index_news.html"><span class="f_green">查看全文</span></a></p>
 				</article>											
 			</div>
 		</section>	
 	</div>
-
+	<div class="foot_scan" >
+		<div class="scan_wrap">
+			<div class="qr_code" id="js_qr_code">
+					<img id="js_scan_img" src="images/weixin.png" />
+					<p class="hidden" id="js_scan_app">扫一扫下载APP</p>
+					<p class="show" id="js_scan_weixin">扫一扫微信下单</p>
+			</div>
+			<ul>
+				<li>
+					<img class="js_scan" src="images/scan001.png" />
+				</li>
+				<li>
+					<img class="js_scan" src="images/scan002.png" />
+				</li>
+				<li>
+					<img class="js_scan" src="images/scan003.png" />
+				</li>
+			</ul>
+		</div>	
+	</div>
 	<footer class="footer_bg1">
 		<div class="foot">
 			<div class="ft_item">

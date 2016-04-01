@@ -4,12 +4,13 @@
 	<title>华天</title>
 	<meta charset="utf-8" />
 	<link href="styles/common.css" rel="stylesheet" type="text/css" />
+	<script src="scripts/common.js" type="text/javascript"></script>
 </head>
 <body>
 	<header class="header_fixed">
 		<div class="head_item">
 			<div class="hd_logo">
-				<a href=""><img src="images/logo.png" alt="logo"/></a>
+				<a href="index.html"><img src="images/logo.png" alt="logo"/></a>
 			</div>
 			<div class="hd_location">
 				<p>长沙</p>
@@ -37,7 +38,7 @@
 				<ul>
 					<a href="housekeep_family.html"><li>家庭保洁</li></a>
 					<a href="housekeep_new.html"><li>新房开荒</li></a>
-					<a href="housekeep_wipe_window.html"><li class="nobd_line">擦玻璃</li></a>
+					<a class="active_link" href="housekeep_wipe_window.html"><li class="nobd_line">擦玻璃</li></a>
 				</ul>
 				</ul>
 				<div class="weixin">
@@ -93,7 +94,7 @@
 						<p>3.操作区域干净整洁。</p>
 					</div>
 				</div>
-				<div class="r_item2">
+				<div class="r_item2  mb_0">
 					<h4 class="bd_line">服务保障</h4>
 					<div class="r_content">
 						<p>您可以通过APP线上点评、客服电话等多渠道反馈意见；保证每一例不满意投诉24小时内响应，72小时内完成赔付。</p>
@@ -102,8 +103,26 @@
 			</div>
 		</section>	
 	</div>
-
-
+	<div class="foot_scan" >
+		<div class="scan_wrap">
+			<div class="qr_code" id="js_qr_code">
+					<img id="js_scan_img" src="images/weixin.png" />
+					<p class="hidden" id="js_scan_app">扫一扫下载APP</p>
+					<p class="show" id="js_scan_weixin">扫一扫微信下单</p>
+			</div>
+			<ul>
+				<li>
+					<img class="js_scan" src="images/scan001.png" />
+				</li>
+				<li>
+					<img class="js_scan" src="images/scan002.png" />
+				</li>
+				<li>
+					<img class="js_scan" src="images/scan003.png" />
+				</li>
+			</ul>
+		</div>	
+	</div>
 	<footer class="footer_bg1">
 		<div class="foot">
 			<div class="ft_item">

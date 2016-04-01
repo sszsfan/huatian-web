@@ -4,12 +4,13 @@
 	<title>华天</title>
 	<meta charset="utf-8" />
 	<link href="styles/common.css" rel="stylesheet" type="text/css" />
+	<script src="scripts/common.js" type="text/javascript"></script>
 </head>
 <body>
 	<header class="header_fixed">
 		<div class="head_item">
 			<div class="hd_logo">
-				<a href=""><img src="images/logo.png" alt="logo"/></a>
+				<a href="index.html"><img src="images/logo.png" alt="logo"/></a>
 			</div>
 			<div class="hd_location">
 				<p>长沙</p>
@@ -20,7 +21,7 @@
 					<li><a href="index.html">首页</a></li>
 					<li><a href="wash.html">洗涤</a></li>
 					<li><a href="housekeep.html">家政</a></li>
-					<li><a href="cook.html">厨师</a></li>
+					<li><a class="active_link" href="cook.html">厨师</a></li>
 					<li><a href="market_analyse.html">合作加盟</a></li>
 					<li><a href="train.html">培训招生</a></li>
 					<li><a href="download_app.html">下载APP</a></li>
@@ -29,7 +30,7 @@
 		</div>
 	</header>
 
-	<div class="body_item2">
+	<div class="body_item2 bd2_mb60">
 		<section class="main_img">
 			<img class="show" src="images/cook000.png" />
 		</section>
@@ -83,7 +84,7 @@
 						<img src="images/cook007.png" />
 						<div class="price_info">
 							<p>四菜一汤</p>
-							<p class="f_red" >129元起</p>
+							<p class="f_red" >99元起</p>
 							<a href="cook7.html"><p class="f_blue">查看详情</p></a>
 						</div>
 					</li>
@@ -107,7 +108,26 @@
 			</nav>
 		</section>
 	</div>
-
+	<div class="foot_scan" >
+		<div class="scan_wrap">
+			<div class="qr_code" id="js_qr_code">
+					<img id="js_scan_img" src="images/weixin.png" />
+					<p class="hidden" id="js_scan_app">扫一扫下载APP</p>
+					<p class="show" id="js_scan_weixin">扫一扫微信下单</p>
+			</div>
+			<ul>
+				<li>
+					<img class="js_scan" src="images/scan001.png" />
+				</li>
+				<li>
+					<img class="js_scan" src="images/scan002.png" />
+				</li>
+				<li>
+					<img class="js_scan" src="images/scan003.png" />
+				</li>
+			</ul>
+		</div>	
+	</div>
 	<footer class="footer_bg1">
 		<div class="foot">
 			<div class="ft_item">

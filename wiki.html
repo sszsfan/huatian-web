@@ -4,12 +4,13 @@
 	<title>华天</title>
 	<meta charset="utf-8" />
 	<link href="styles/common.css" rel="stylesheet" type="text/css" />
+	<script src="scripts/common.js" type="text/javascript"></script>
 </head>
 <body>
 	<header class="header_fixed">
 		<div class="head_item">
 			<div class="hd_logo">
-				<a href=""><img src="images/logo.png" alt="logo"/></a>
+				<a href="index.html"><img src="images/logo.png" alt="logo"/></a>
 			</div>
 			<div class="hd_location">
 				<p>长沙</p>
@@ -28,35 +29,52 @@
 			</nav>
 		</div>
 	</header>
-
 	<div class="body_item3">
 		<section class="main_pic">
 			<img class="show" src="images/wiki000.png" />
 		</section>
 		<section class="join_us_content">
-			<div class="left">
+			<div class="left wiki_left">
 				<div class="weixin">
-					<img src="images/icon.png" />
+					<img src="images/weixin.png" />
 					<p>微信扫一扫，去<span class="f_red">APP</span>下单</p>
-					<img src="images/icon.png" />
+					<img src="images/weixin.png" />
 					<p>微信扫一扫，去<span class="f_red">公众号</span>下单</p>
 				</div>
 			</div>
 			<div class="right">
-				<h4 class="bd_line">家政知识</h4>
-				<h5>怎样验收保洁服务</h5>
-				<p class="bd_line content">现在很多家庭都会请保洁服务人员进行保洁服务，那么在他们做完保洁服务之后，我们该怎么验收保洁服务的质量呢，在验收保洁服务的时候，我们有需要特别注意些什么呢...<span class="f_green">查看详情</span></p>
+				<h4 class="bd_line">家政百科</h4>
+				<h5>怎么验收保洁服务</h5>
+				<p class="bd_line content">现在很多家庭都会请保洁服务人员进行保洁服务，那么在他们做完保洁服务之后，我们该怎么验收保洁服务的质量呢，在验收保洁服务的时候，我们有需要特别注意些什么呢...<a href="wiki1.html"><span class="f_green">查看详情</span></a></p>
 				<h5>开荒保洁的要求及具体步骤</h5>
-				<p class="bd_line content">1.玻璃2.卫生间3.厨房4.卧室及大厅5.门及框6.地面的清洗7.地角线8.地板打蜡 　　开荒保洁项目具体如下：1.玻璃：先用毛巾擦拭玻璃框，着重处理没有做掉的部位，再用涂水器沾稀释后的玻璃水溶...<span class="f_green">查看详情</span></p>
+				<p class="bd_line content">1.玻璃2.卫生间3.厨房4.卧室及大厅5.门及框6.地面的清洗7.地角线8.地板打蜡。开荒保洁项目具体如下：1.玻璃：先用毛巾擦拭玻璃框，着重处理没有做掉的部位，再用涂水器沾稀释后的玻璃水溶...<a href="wiki2.html"><span class="f_green">查看详情</span></a></p>
 				<h5>请钟点工要注意些什么</h5>
-				<p class="bd_line content">第一、雇主在找小时工的时候应先在上网或者打电话咨询一些具有正规资质、在工商行政部门和其他主管部门登记备案的悠家客网，在去选择服务人员上门服务。 第二、雇主可以要求被选的家政服务公司提小...<span class="f_green">查看详情</span></p>
-				<h5>西服、西裤熨烫质量要求</h5>
-				<p class="bd_line content">1.范围本标准规定了在洗染经营服务中，对西服、西裤的熨烫质量要求。本标准适用于洗染业经营活动。2.规范性引用文件下列文件对于本文件的应用是必不可少的。凡是注日期的引...<span class="f_green">查看详情</span></p>
-				<p class="more_info">加载更多动态</p>
+				<p class="bd_line content">第一、雇主在找小时工的时候应先在上网或者打电话咨询一些具有正规资质、在工商行政部门和其他主管部门登记备案的悠家客网，在去选择服务人员上门服务。 第二、雇主可以要求被选的家政服务公司提小...<a href="wiki3.html"><span class="f_green">查看详情</span></a></p>
+				<h5>家庭开荒保洁的服务标准</h5>
+				<p class="content">开荒是清洁工程之首，由于建筑工程中常常会遗留下许多垃圾污垢，各种地面石头，墙壁上会遗留下水泥浆块、油漆、玻璃胶、水污、锈迹等，这些都必须在开荒工作中清洗干净，所以它是一项最艰苦、最复杂、最费神的工作...<a href="wiki4.html"><span class="f_green">查看详情</span></a></p>
 			</div>
 		</section>
 	</div>
-
+	<div class="foot_scan" >
+		<div class="scan_wrap">
+			<div class="qr_code" id="js_qr_code">
+					<img id="js_scan_img" src="images/weixin.png" />
+					<p class="hidden" id="js_scan_app">扫一扫下载APP</p>
+					<p class="show" id="js_scan_weixin">扫一扫微信下单</p>
+			</div>
+			<ul>
+				<li>
+					<img class="js_scan" src="images/scan001.png" />
+				</li>
+				<li>
+					<img class="js_scan" src="images/scan002.png" />
+				</li>
+				<li>
+					<img class="js_scan" src="images/scan003.png" />
+				</li>
+			</ul>
+		</div>	
+	</div>	
 	<footer class="footer_bg2">
 		<div class="foot">
 			<div class="ft_item">
