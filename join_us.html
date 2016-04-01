@@ -1,68 +1,114 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>����</title>
+	<title>华天</title>
 	<meta charset="utf-8" />
 	<link href="styles/common.css" rel="stylesheet" type="text/css" />
+	<script src="scripts/common.js" type="text/javascript"></script>
 </head>
 <body>
 	<header class="header_fixed">
 		<div class="head_item">
 			<div class="hd_logo">
-				<a href=""><img src="images/logo.png" alt="logo"/></a>
+				<a href="index.html"><img src="images/logo.png" alt="logo"/></a>
 			</div>
 			<div class="hd_location">
-				<p>��ɳ</p>
-				<p><a href="city.html">[<span>�л�����</span>]</a></p>
+				<p>长沙</p>
+				<p><a href="city.html">[<span>切换城市</span>]</a></p>
 			</div>
 			<nav class="hd_nav">
 				<ul class="nav_item">
-					<li><a href="index.html">��ҳ</a></li>
-					<li><a href="wash.html">ϴ��</a></li>
-					<li><a href="housekeep.html">����</a></li>
-					<li><a href="cook.html">��ʦ</a></li>
-					<li><a href="join_us.html">��������</a></li>
-					<li><a href="train.html">��ѵ����</a></li>
-					<li><a href="download_app.html">����APP</a></li>
+					<li><a href="index.html">首页</a></li>
+					<li><a href="wash.html">洗涤</a></li>
+					<li><a href="housekeep.html">家政</a></li>
+					<li><a href="cook.html">厨师</a></li>
+					<li><a href="market_analyse.html">合作加盟</a></li>
+					<li><a href="train.html">培训招生</a></li>
+					<li><a href="download_app.html">下载APP</a></li>
 				</ul>
 			</nav>
 		</div>
 	</header>
-	
+
 	<div class="body_item3">
-		<section class="main_img">
-			<img src="images/join.png" />
-		</section>	
+		<section class="main_pic">
+			<img class="show" src="images/join_us000.png" />
+		</section>
+		<section class="join_us_content">
+			<div class="left">
+				<h4>招聘职位</h4>
+				<ul>
+					<li>厨师</li>
+					<li>保洁师</li>
+				</ul>
+			</div>
+			<div class="right">
+				<h4>保洁师</h4>
+				<p class="workplace">工作地点：长沙</p>
+				<p>月收入：平台派单，多接单多挣钱！月收入平均5500-6000元</p>
+				<p>合作形式多样：三个月后，顾客好评率高者，培训除尘除垢、地板打蜡、平均收入能在8000左右。</p>
+				<h5>任职资格：</h5>
+				<ul class="job_requires">
+					<li>女：45周岁以下，18周岁以上；</li>
+					<li>吃苦耐劳，热情，有服务意识；</li>
+					<li>普通话交流顺畅，沟通能力强；</li>
+					<li>有只能手机，会简单操作；</li>
+					<li>身体健康，相貌友善。</li>
+				</ul>
+				<p class="mt">合作内容：自由接单，为客户提供家庭基础保洁，上门打扫卫生。</p>
+				<p>接单时间：自由</p>
+				<p>电话：4008-909-258</p>
+			</div>
+		</section>
 	</div>
-	
-	<footer>
+	<div class="foot_scan" >
+		<div class="scan_wrap">
+			<div class="qr_code" id="js_qr_code">
+					<img id="js_scan_img" src="images/weixin.png" />
+					<p class="hidden" id="js_scan_app">扫一扫下载APP</p>
+					<p class="show" id="js_scan_weixin">扫一扫微信下单</p>
+			</div>
+			<ul>
+				<li>
+					<img class="js_scan" src="images/scan001.png" />
+				</li>
+				<li>
+					<img class="js_scan" src="images/scan002.png" />
+				</li>
+				<li>
+					<img class="js_scan" src="images/scan003.png" />
+				</li>
+			</ul>
+		</div>	
+	</div>
+	<footer class="footer_bg2">
 		<div class="foot">
 			<div class="ft_item">
-				<h4>���쵽��</h4>
-				<p><a href="wash.html">ϴ�ӷ���</a></p>
-				<p><a href="housekeep.html">��������</a></p>
-				<p><a href="cook.html">��ʦ����</a></p>
+				<h4>华天到家</h4>
+				<p><a href="wash.html">洗涤服务</a></p>
+				<p><a href="housekeep.html">家政服务</a></p>
+				<p><a href="cook.html">厨师服务</a></p>
 			</div>
 			<div class="ft_item">
-				<h4>��������</h4>
-				<p><a href="about.html">�˽�����</a></p>
-				<p><a href="join_us.html">��������</a></p>
-				<p><a href="wiki.html">�����ٿ�</a></p>
+				<h4>关于我们</h4>
+				<p><a href="about.html">了解我们</a></p>
+				<p><a href="join_us.html">加入我们</a></p>
+				<p><a href="wiki.html">家政百科</a></p>
 			</div>
 			<div class="ft_item">
-				<h4>��ע����</h4>
-				<p><a href="">����΢��</a></p>
-				<p><a href="">�ٷ�΢��</a></p>
+				<h4>关注我们</h4>
+				<p><a href="">新浪微博</a></p>
+				<p><a href="">官方微信</a></p>
 			</div>
 			<div class="ft_item2">
-				<h4>��ϵ����</h4>
-				<p>�������䣺chhtg@163.com</p>				
-				<p>��ϵ�绰����86����731��84660888����80989</p>
-				<p>���棺��86����731��84421788</p>
-				<p>��ַ������ʡ��ɳ��ܽ����·һ�� 593��</p>
+				<h4>联系我们</h4>
+				<p>电子邮箱：chhtg@163.com</p>				
+				<p>联系电话：（86——731）84660888——80989</p>
+				<p>传真：（86——731）84421788</p>
+				<p>地址：湖南省长沙市芙蓉中路一段 593号</p>
 			</div>						
 		</div>
-		<p class="corp_info">Copyright ? 2010 HuaTian Industry Holding Group Co.,Ltd All right reserved - ��ICP��13010431��</p>
+		<p class="corp_info">Copyright © 2010 HuaTian Industry Holding Group Co.,Ltd All right reserved - 湘ICP备13010431号</p>
 	</footer>
 
 </body>	

@@ -4,13 +4,13 @@
 	<title>华天</title>
 	<meta charset="utf-8" />
 	<link href="styles/common.css" rel="stylesheet" type="text/css" />
-	<script src="scripts/common.js" ></script>
+	<script src="scripts/common.js" type="text/javascript"></script>
 </head>
 <body>
 	<header class="header_fixed">
 		<div class="head_item">
 			<div class="hd_logo">
-				<a href=""><img src="images/logo.png" alt="logo"/></a>
+				<a href="index.html"><img src="images/logo.png" alt="logo"/></a>
 			</div>
 			<div class="hd_location">
 				<p>长沙</p>
@@ -22,25 +22,23 @@
 					<li><a href="wash.html">洗涤</a></li>
 					<li><a href="housekeep.html">家政</a></li>
 					<li><a href="cook.html">厨师</a></li>
-					<li><a href="join_us.html">合作加盟</a></li>
+					<li><a href="market_analyse.html">合作加盟</a></li>
 					<li><a href="train.html">培训招生</a></li>
 					<li><a href="download_app.html">下载APP</a></li>
 				</ul>
 			</nav>
 		</div>
 	</header>
-
 	<div class="body_item2">
 		<section class="main_pic">
-			<img src="images/clothes000.png" />
+			<img src="images/home_textile000.png" />
 		</section>
-
 		<section class="bd2_content">
 			<div class="f_left">
 				<ul>
 					<a href="wash_clothes.html"><li>洗衣</li></a>
 					<a href="wash_shoes.html"><li>洗鞋</li></a>
-					<a href="wash_home_textile.html"><li>家纺</li></a>
+					<a class="active_link" href="wash_home_textile.html"><li>家纺</li></a>
 					<a href="wash_leather.html"><li>奢侈品皮具</li></a>
 					<a href="wash_for_hotel.html"><li>酒店布草洗涤</li></a>
 					<a href="wash_for_enterprise.html"><li class="nobd_line">公司工装洗涤</li></a>
@@ -52,12 +50,11 @@
 					<p>微信扫一扫，去<span class="f_red">公众号</span>下单</p>
 				</div>
 			</div>
-
 			<div class="f_right">
 				<div class="r_item1">
-					<h4 class="bd_line">洗衣价格</h4>
+					<h4 class="bd_line">家纺清洗价格</h4>
 					<div class="price_tb">
-						<table class="tb tb1" border="0" cellpadding="0" cellspacing="0">
+						<table class="tb tb_1" border="0" cellpadding="0" cellspacing="0">
 							<caption class="f_red">价目表</caption>
 							<tr>
 								<td>毛静</td>
@@ -75,6 +72,38 @@
 								<td>浴巾</td>
 								<td>29元/件</td>
 							</tr>
+							<tr>
+								<td>抱枕</td>
+								<td>29元/件</td>
+							</tr>
+							<tr>
+								<td>包（非皮质）</td>
+								<td>29元/件</td>
+							</tr>
+							<tr>
+								<td>靠背</td>
+								<td>39元/件</td>
+							</tr>
+							<tr>
+								<td>被罩</td>
+								<td>39元/件</td>
+							</tr>
+							<tr>
+								<td>沙发套/位</td>
+								<td>49元/件</td>
+							</tr>
+							<tr>
+								<td>汽车坐垫（棉麻）</td>
+								<td>49元/件</td>
+							</tr>
+							<tr>
+								<td>毛毯</td>
+								<td>69元/件</td>
+							</tr>
+							<tr>
+								<td>夏凉被</td>
+								<td>69元/件</td>
+							</tr>
 						</table>
 					</div>	
 					<h4 class="bd_line">服务说明</h4>
@@ -91,7 +120,26 @@
 			</div>
 		</section>	
 	</div>
-
+	<div class="foot_scan" >
+		<div class="scan_wrap">
+			<div class="qr_code" id="js_qr_code">
+					<img id="js_scan_img" src="images/weixin.png" />
+					<p class="hidden" id="js_scan_app">扫一扫下载APP</p>
+					<p class="show" id="js_scan_weixin">扫一扫微信下单</p>
+			</div>
+			<ul>
+				<li>
+					<img class="js_scan" src="images/scan001.png" />
+				</li>
+				<li>
+					<img class="js_scan" src="images/scan002.png" />
+				</li>
+				<li>
+					<img class="js_scan" src="images/scan003.png" />
+				</li>
+			</ul>
+		</div>	
+	</div>
 	<footer class="footer_bg1">
 		<div class="foot">
 			<div class="ft_item">
