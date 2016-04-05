@@ -164,7 +164,32 @@ function moveElement(elementID,final_x,interval) {
   elem.movement = setTimeout(repeat,interval);
 }
 
+function showJob(){
+	if(!document.getElementById("js_cook")) return false;
+	if(!document.getElementById("js_cleaning")) return false;
+	if(!document.getElementById("js_cook_recruit")) return false;
+	if(!document.getElementById("js_cleaning_recruit")) return false;
+	var job1 = document.getElementById("js_cook");
+	var job2 = document.getElementById("js_cleaning");
+	var con1 = document.getElementById("js_cook_recruit");
+	var con2 = document.getElementById("js_cleaning_recruit");
+
+	job1.onclick=function(){
+		con1.style.display="block";
+		job1.setAttribute("class","f_red");
+		con2.style.display="none";
+		job2.removeAttribute("class");
+	};
+	job2.onclick=function(){
+		con2.style.display="block";
+		job2.setAttribute("class","f_red");
+		con1.style.display="none";
+		job1.removeAttribute("class");
+	};	
+}
+
 addLoadEvent(showNav);
 addLoadEvent(showMarket);
 addLoadEvent(showScan);
+addLoadEvent(showJob);
 //addLoadEvent(showPic);

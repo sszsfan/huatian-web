@@ -1,7 +1,7 @@
 $(function(){
   $("#slides").slidesjs({
-	width: 900,
-	height: 348,
+	width: 980,
+	height: 420,
 	navigation: {
 		  active: false,
 			// [boolean] Generates next and previous buttons.
