@@ -324,8 +324,7 @@ a{margin:0; padding:0;}
 
 
 @media screen and (max-width: 1240px) {
-	.head_item, .wrapper, .foot, section{width: 980px; margin:0 auto;}
-
+	.head_item, .wrap .wrapper, .foot, section{width: 980px; margin:0 auto;}
   .body_item .service_items .service_item1 li {width:121.6px; height:121.6px; border-left: 1px solid #dcdcdc; display:inline-block; float:left;}
   .body_item .service_items .service_item1 li img {width:70px; height: 70px; margin:0 auto; margin-top:10px; margin-bottom:-5px;}
   .body_item2 .bd2_items ul li .price_info .text_content {margin:0 auto;}
