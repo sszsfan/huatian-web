@@ -29,10 +29,10 @@ a.active_link {color:#ea413a;}
     color:#ccc;
 }
 /* webkit, opera, IE9 */
-::selection { background: #167efb;color: #fff; }
+::selection { background: #167efb;color: #fff;}
 
 /* mozilla firefox */
-::-moz-selection { background: #74c543;color: #fff; }
+::-moz-selection { background: #74c543;color: #fff;}
 
 body, html {min-width: 980px; margin:0 auto;}
 
@@ -112,7 +112,7 @@ a{margin:0; padding:0;}
 .wrap .wrapper .item_content1 {width:280px;}
 .wrap .wrapper .item_content1 ul {float:left;}
 
-/*轮播图*/
+/*轮播图
 .slides_pics {float:left; display: block; width: 100%; height:420px;}
 .slides_pics img {width: 100%; height:420px;}
 #slides {display: none; position:relative; overflow: hidden;}
@@ -120,7 +120,30 @@ a{margin:0; padding:0;}
 #slides .slidesjs-pagination li {display: inline-block; width: 30px;}
 #slides .slidesjs-pagination li a {display: block; width: 10px; height: 10px; border-radius: 50%; text-indent: -9999px; background-color: #fff; filter: alpha(opacity=30); -moz-opacity: 0.3; -webkit-opacity: 0.3; opacity: 0.3;}
 #slides .slidesjs-pagination li a.active {filter: alpha(opacity=100); -moz-opacity: 1; -webkit-opacity: 1; opacity: 1;}
+*/
 
+/* 轮播图 开始 */
+.slidebox {width: 100%;position: relative;background: #fff;margin-bottom: 20px;}
+.slidebox .slide {overflow: hidden;position: relative;}
+
+.rslides{position:relative;list-style:none;overflow:hidden;width:100%;padding:0;margin:0}
+.rslides li{-webkit-backface-visibility:hidden;position:absolute;display:none;width:100%;left:0;top:0}
+.rslides li:first-child{position:relative;display:block;float:left}
+.rslides img{display:block;height:auto;float:left;width:100%;border:0}
+
+a.rslides_nav {width: 41px;height: 69px;display: block;position: absolute;top:50%;margin-top: -35px;overflow: hidden;text-indent: -9999em;background: url("../images/slide_nav.png") no-repeat;z-index: 12;cursor: pointer;}
+
+a.rslides_nav.prev {left: 0px;background-position: -82px 0px;}
+a.rslides_nav.next {right: 0px;background-position: -123px 0px;}
+
+a.rslides_nav.prev:hover {background-position: 0px 0px;cursor: pointer;}
+a.rslides_nav.next:hover {background-position: -41px 0px;cursor: pointer;}
+
+.rslides_tabs {position: absolute;bottom: 30px;right: 30px;z-index: 2;height: 12px;}
+.rslides_tabs li {list-style: none;float: left;margin: 0 5px;}
+.rslides_tabs li a {width: 8px;height: 8px;background: rgba(0,0,0,0.5);overflow: hidden;display: block;text-indent: -9999em;border-radius: 50%;border: 2px solid rgba(255,255,255,0.3);}
+.rslides_tabs li.rslides_here a,.rslides_tabs li a:hover {background: rgba(255,255,255,0.8);border: 2px solid rgba(0,0,0,0.4);}
+/* 轮播图 结束     rslides_tabs rslides1_tabs rslides_here */
 
 
 /*section1*/
@@ -300,8 +323,8 @@ a{margin:0; padding:0;}
 .body_item2 .pic_bg {width:100%; height:610px;}
 .body_item2 .app_pics {position:relative;}
 .body_item2 .app_pics .pic_phone {position:absolute; top:-510px; left:50px; width:370px; height:650px;}
-.body_item2 .app_pics .pic_words1 {position:absolute; top:-340px; left:500px; width:438px; height:62px;}
-.body_item2 .app_pics .pic_words2 {position:absolute; top:-240px; left:500px; width:401px; height:92px;}
+.body_item2 .app_pics .pic_words1 {position:absolute; top:-390px; left:500px; width:438px; height:62px;}
+.body_item2 .app_pics .pic_words2 {position:absolute; top:-290px; left:500px; width:401px; height:92px;}
 .body_item2 .contents {margin:40px auto;}
 .body_item2 .contents .app_version1 { display:inline-block; width:186px; height:62px; line-height:62px;text-align: center; background-color: #fff; margin-left:200px; margin-right: 100px;}
 .body_item2 .contents .app_version2 { display:inline-block; width:186px; height:62px; line-height:62px;  text-align: center; background-color: #fff; margin-right:120px;}
