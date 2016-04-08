@@ -139,7 +139,7 @@ a.rslides_nav.next {right: 0px;background-position: -123px 0px;}
 a.rslides_nav.prev:hover {background-position: 0px 0px;cursor: pointer;}
 a.rslides_nav.next:hover {background-position: -41px 0px;cursor: pointer;}
 
-.rslides_tabs {position: absolute;bottom: 30px;right: 30px;z-index: 2;height: 12px;}
+.rslides_tabs {position: absolute;bottom: 20px;right: 30px;z-index: 2;height: 12px;}
 .rslides_tabs li {list-style: none;float: left;margin: 0 5px;}
 .rslides_tabs li a {width: 8px;height: 8px;background: rgba(0,0,0,0.5);overflow: hidden;display: block;text-indent: -9999em;border-radius: 50%;border: 2px solid rgba(255,255,255,0.3);}
 .rslides_tabs li.rslides_here a,.rslides_tabs li a:hover {background: rgba(255,255,255,0.8);border: 2px solid rgba(0,0,0,0.4);}
@@ -348,6 +348,12 @@ a.rslides_nav.next:hover {background-position: -41px 0px;cursor: pointer;}
 
 @media screen and (max-width: 1240px) {
 	.head_item, .wrap .wrapper, .foot, section{width: 980px; margin:0 auto;}
+	.wrap .wrapper {height:332px;}
+	.wrap .wrapper .menu {height:332px;}
+	.wrap .wrapper .menu .category {height:47px; line-height: 47px;}
+	.wrap .wrapper .menu .category i {top:13px;}
+	.wrap .wrapper .item_content ul li {height:47.4px; line-height: 47.4px;}
+
   .body_item .service_items .service_item1 li {width:121.6px; height:121.6px; border-left: 1px solid #dcdcdc; display:inline-block; float:left;}
   .body_item .service_items .service_item1 li img {width:70px; height: 70px; margin:0 auto; margin-top:10px; margin-bottom:-5px;}
   .body_item2 .bd2_items ul li .price_info .text_content {margin:0 auto;}
