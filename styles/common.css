@@ -1,7 +1,7 @@
 @charset "UTF-8";
 html {display: block;}
 *{-webkit-tap-highlight-color:transparent;outline:0}
-body,h1,h2,h3,h4,h5,h6,hr,p,blockquote,dl,dt,dd,ul,ol,li,pre,form,fieldset,legend,button,input,textarea,th,td{margin:0;padding:0;vertical-align:baseline; font-weight:normal;}
+body,h1,h2,h3,h4,h5,h6,hr,p,blockquote,dl,dt,dd,ul,ol,li,pre,form,fieldset,legend,button,input,textarea,th,td{margin:0;padding:0;vertical-align:center; font-weight:normal;}
 body {margin:0 auto;font-family: "Helvetica Neue",Helvetica,Arial,"Hiragino Sans GB","华文细黑","STHeiti","微软雅黑","Microsoft YaHei",SimHei,sans-serif !important;color:#666;-webkit-text-size-adjust: 100% !important;font-smoothing: antialiased;-webkit-font-smoothing: antialiased;-o-font-smoothing: antialiased;-moz-font-smoothing: antialiased;font-weight: normal;font-size: 16px; color:#161515;line-height:1.8;display: block;background: #fff;}
 img{border:0 none;vertical-align:top;}
 i,em{font-style:normal}
@@ -164,8 +164,8 @@ a.rslides_nav.next:hover {background-position: -41px 0px;cursor: pointer;}
 
 /*section2*/
 .body_item .comments_items {background: #fff; padding-top:35px; padding-bottom: 30px; position:relative;}
-.body_item .comments_items article { position:relative; padding: 0px 280px 10px 160px ; min-height:100px;}
-.body_item .comments_items article img {position:absolute; left:50px; top:0px; height:80px; width:80px;}
+.body_item .comments_items article { position:relative; padding: 5px 250px 10px 140px ; min-height:90px;}
+.body_item .comments_items article img {position:absolute; left:50px; top:0px; height:70px; width:70px;}
 .body_item .comments_items .cm_time {position:absolute; right: 100px; top: 32px; display: block; font-size:15px; color: #6b6b6b;}
 
 .body_item .comments_items h4{font-size:18px; color:#161515;}
@@ -199,9 +199,9 @@ a.rslides_nav.next:hover {background-position: -41px 0px;cursor: pointer;}
 
 
 /* 洗涤、管家 内容页通用 */
-.body_item2 .tb_1 td {width:50%;}
-.body_item2 .f_right .tb_2 td {width:33.3%;}
-.body_item2 .f_right .tb_3 td {width:16.6%;}
+.body_item2 .tb_1 td, .body_item2 .tb_1 th {width:33.3%;}
+.body_item2 .f_right .tb_2 td, .body_item2 .f_right .tb_2 th{width:25%;}
+.body_item2 .f_right .tb_3 td, .body_item2 .f_right .tb_3 th {width:50%;}
 .body_item2 .f_right .tb_4 td {width:20%;}
 .body_item2 .bd2_content {overflow:hidden; font-size:16px; }
 .body_item2 .f_left {float:left; display:block; width:20%; text-align:center;}
@@ -217,7 +217,8 @@ a.rslides_nav.next:hover {background-position: -41px 0px;cursor: pointer;}
 .body_item2 .f_right .price_tb {width:85%; margin:0 auto; margin-top:20px;}
 .body_item2 .f_right .price_tb p {font-size: 14px; color:#6b6b6b; line-height: 40px;}
 .body_item2 .tb {border: solid #fff; border-width: 1px 0px 0px 1px; text-align:center; background-color: #f5f5f5; width:100%; }
-.body_item2 .tb td {border: solid #fff; border-width: 0px 1px 1px 0px; line-height: 44px;font-size:15px;}
+.body_item2 .tb td{border: solid #fff; border-width: 0px 1px 1px 0px; line-height: 44px;font-size:15px;}
+.body_item2 .tb th{border: solid #fff; border-width: 0px 1px 1px 0px; line-height: 44px;font-size:16px; font-weight:normal;}
 .body_item2 .tb caption {margin:10px auto; font-size:15px;}
 .body_item2 .f_right .r_content {padding:10px 0;}
 .body_item2 .f_right .r_content p {line-height: 40px; padding:0 40px; text-indent: 2em;}
@@ -294,13 +295,13 @@ a.rslides_nav.next:hover {background-position: -41px 0px;cursor: pointer;}
 .body_item2 .about_content .intr {padding:20px 40px;}
 .body_item2 .about_content .intr p {line-height: 30px; font-size:16px; text-indent: 2em;}
 /*加入我们家政百科页面*/
-.body_item3 {margin-top: 100px;}
+.body_item3 {margin-top: 100px; min-height: 700px;}
 .body_item3 .join_us_content {margin-bottom: 40px; overflow: hidden;}
 .body_item3 .join_us_content .job_list li:hover {color:#e94141;}
 .body_item3 .join_us_content .left {float:left; width:18%;}
 .body_item3 .join_us_content .right {float:right; width:78%;}
 .body_item3 .join_us_content h4 {font-size: 20px; height:60px; line-height: 60px;}
-.body_item3 .join_us_content h5 {font-size: 18px; height:50px; line-height: 50px; margin-top: 10px;}
+.body_item3 .join_us_content h5 {font-size: 18px; height:30px; line-height: 30px;}
 .body_item3 .join_us_content .job_requires li {list-style-type: disc; margin-left:20px; font-size: 14px;}
 .body_item3 .join_us_content p.mt {margin-top:20px;}
 .body_item3 .join_us_content .workplace {color:#999;}
@@ -311,7 +312,7 @@ a.rslides_nav.next:hover {background-position: -41px 0px;cursor: pointer;}
 .body_item3 .left .weixin img {width:100%;height:100%;}
 .body_item3 .left .weixin p {margin:10px auto; font-size:13px;}
 .body_item3 .right p.bd_line {padding-bottom:20px;}
-
+.body_item3 .right ol li{margin-top:10px;}
 
 .body_item4 {margin-top: 120px; margin-bottom: 60px;}
 .body_item4 .wiki2 {min-height: 600px; position:relative;}
@@ -329,6 +330,7 @@ a.rslides_nav.next:hover {background-position: -41px 0px;cursor: pointer;}
 .body_item2 .contents .app_version1 { display:inline-block; width:186px; height:62px; line-height:62px;text-align: center; background-color: #fff; margin-left:200px; margin-right: 100px;}
 .body_item2 .contents .app_version2 { display:inline-block; width:186px; height:62px; line-height:62px;  text-align: center; background-color: #fff; margin-right:120px;}
 .body_item2 .contents .app_scan {position:relative; top:47px; display:inline-block; width:150px; text-align: center; }
+.body_item2 .contents .app_scan .app_icon{width:150px; height:150px;}
 .body_item2 .contents .app_d { width:150px; height:30px; line-height: 30px; font-size: 14px;}
 /* 切换城市页面 开始 */
 .body_item1 {display:block; min-width: 1240px; background-color: #fff; margin-top:100px;}
@@ -364,9 +366,11 @@ a.rslides_nav.next:hover {background-position: -41px 0px;cursor: pointer;}
 	.body_item .service_items .service_item3 li {width:321.3px; height:212px; display:inline-block; float:left; text-align:center; padding:0 4px;}
 	.body_item .service_items .service_item3 li img {width:321.3px; height: 162px; display: block; }
 
+	.body_item2 .f_left li {font-size:16px;}
 
 	.foot .ft_item {float:left; width:22%;}
 	.foot .ft_item2 {float:left; width:34%;}
 }
 
-
+/* 主页厨师内容隐藏 ！important */
+.body_item .service_items .service_item2, .body_item .service_items .service_item3{display:none;}
