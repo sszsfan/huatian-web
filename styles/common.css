@@ -219,7 +219,7 @@ a.rslides_nav.next:hover {background-position: -41px 0px;cursor: pointer;}
 .body_item2 .tb {border: solid #fff; border-width: 1px 0px 0px 1px; text-align:center; background-color: #f5f5f5; width:100%; }
 .body_item2 .tb td{border: solid #fff; border-width: 0px 1px 1px 0px; line-height: 44px;font-size:15px;}
 .body_item2 .tb th{border: solid #fff; border-width: 0px 1px 1px 0px; line-height: 44px;font-size:16px; font-weight:normal;}
-.body_item2 .tb caption {margin:10px auto; font-size:15px;}
+.body_item2 .tb caption {margin:10px auto; font-size:16px;}
 .body_item2 .f_right .r_content {padding:10px 0;}
 .body_item2 .f_right .r_content p {line-height: 40px; padding:0 40px; text-indent: 2em;}
 /* 洗涤 */
